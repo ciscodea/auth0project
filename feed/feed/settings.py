@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "feed.middleware.OneSessionPerUserMiddleware",
 ]
 
 ROOT_URLCONF = 'feed.urls'
